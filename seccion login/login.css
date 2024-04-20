@@ -1,0 +1,196 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(fondo\ login\ 6.jpg);
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-login {
+    width: 400px;
+    height: 400px;
+    border: 1px solid grey;
+    border-radius: 0.5em;
+    background-color: rgba(240, 248, 255, 0);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+.cont-box-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 30px;
+}
+
+input {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
+    border: 1px solid #ccc; /* Borde opcional para resaltar el input */
+    padding: 10px;
+    outline: none;
+    color: white;
+    width: 20em;
+    height: 2em;
+    border-radius: 0.8em;
+    margin: 0;
+    position: relative;
+    top: 25px;
+}
+
+
+h2 {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    top: 20px;
+    font-family: "kanit";
+    color: white;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(251, 251, 251); /* Color del subrayado */
+    transform: scaleX(0);
+    animation-name: subrayarAnimacion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+  @keyframes subrayarAnimacion {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1.2);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+input::placeholder {
+    color: white;
+    
+}
+
+input:focus::placeholder {
+    color: white;
+}
+
+label {
+    
+}
+
+
+.box-button {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 17em;
+    height: 2.5em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #BDC3FF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #13216C;
+    color: white;
+}
+
+
+.link-one{
+    color: white;
+    text-decoration: none;
+}
+
+.text-after-button {
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+span {
+    color: #BDC3FF;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.link-two {
+    color: black;
+}
+
+.link-two:hover {
+    color: white;
+}
+
+.box-icon-home {
+    margin: 0;
+    padding: 0;
+}
+
+.icon-home {
+    color: #BDC3FF;
+}
+
+a:hover {
+    color: #BDC3FF;
+}
+
+
+@media (max-width: 600px) {
+
+    .box-login {
+        width: 300px;
+    }
+
+    input {
+        width: 17em;
+        height: 1.7em;
+    }
+
+    button {
+        width: 11em;
+    }
+    
+}

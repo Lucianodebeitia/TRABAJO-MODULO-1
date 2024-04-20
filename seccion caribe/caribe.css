@@ -1,0 +1,293 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* background-color: rgba(255, 255, 0, 0.493); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-product {
+    width: 1400px;
+    height: 600px;
+    /* border: 1px solid grey; */
+    border-radius: 0.5em;
+}
+
+.cont-prduct-description {
+  display: flex;
+}
+
+.box-tittle {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cont-one {
+    /* border: 1px solid black; */
+    width: 50%;
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-two {
+    width: 50%;
+    /* border: 1px solid turquoise; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.img-principal {
+    width: 520px;
+    border-radius: 0.4em;
+    cursor: pointer;
+    border: 2px solid  rgb(255, 136, 0);
+}
+
+.img-principal:hover {
+    filter: contrast(120%);
+}
+
+.imgs-sec {
+    width: 150px;
+    border-radius: 0.3em;
+    margin: 0 0.3em;
+    transition: 0.35 ease;
+    cursor: pointer;
+    border: 2px solid  rgb(255, 136, 0);
+}
+
+.imgs-sec:hover {
+   transform: scale(1.1);
+   filter: contrast(170%);
+}
+
+.box-imgs-sec {
+    margin: 1em;
+}
+
+.name-company {
+    font-size: 0.7em;
+    font-weight: 900;
+    color: rgb(255, 136, 0);
+}
+
+h2 {
+    display: flex;
+    font-family: "kanit";
+    /* justify-content: center; */
+    margin: 0;
+}
+
+.text-description {
+    font-weight: 600;
+    font-size: 0.8em;
+    color: grey;
+    width: 70%;
+}
+
+div i {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0;
+}
+
+.box-service {
+    display: flex;
+    gap: 40px;
+    text-align: center;
+    margin: 2em 0;
+}
+
+.text-icon {
+    margin: 0;
+    font-size: 0.6em;
+    font-weight: 700;
+}
+
+.text-cash {
+    font-size: 1.5em;
+    /* font-weight: 600; */
+    font-family: "kanit";
+    background-color: gainsboro;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4em;
+}
+
+.box-button {
+    /* width: 100%; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+button {
+    width: 12em;
+    height: 2.7em;
+    border-radius: 0.4em;
+    border: 1px solid grey;
+    background-color: turquoise;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: coral;
+    color: white;
+}
+
+.box-cash {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* width: 100%; */
+}
+
+.services {
+    border: 2px solid  rgb(255, 136, 0);
+    background-color: rgba(128, 128, 128, 0.285);
+    width: 120px;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        background-color: white;
+    }
+
+    .box-tittle {
+        display: flex;
+    }
+
+    section {
+        /* display: flex; */
+        flex-direction: column;
+        height: 270vh;
+        justify-content: flex-start;
+    }
+
+    .box-product {
+        display: flex;
+        flex-direction: column;
+        align-items: none;
+        justify-content: none;
+        /* align-items: center; */
+        /* justify-content: center; */
+        width: 100%;
+    }
+
+    .img-principal {
+        width: 250px;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .cont-prduct-description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont-one {
+        width: 100%;
+        height: 105vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-imgs-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cont-two {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+
+    .name-company {
+        font-size: 0.5em;
+    }
+
+
+
+    .box-cash {
+        width: 200px;
+    }
+
+    .text-cash {
+        font-size: 0.9 em;
+        margin: 1em;
+    }
+
+    .box-service {
+        gap: 3px;
+        width: 100%;
+        /* height: 120px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-tittle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h2-mobile {
+        display: flex;
+        font-family: "kanit";
+        /* justify-content: center; */
+        margin: 0;
+    }
+
+    .name-company {
+        display: none;
+    }
+
+    .tittle-desktop {
+        display: none;
+    }
+
+    .name-company-mobile {
+        font-size: 0.6em;
+    font-weight: 900;
+    color: rgb(255, 136, 0);
+    }
+
+    
+}
